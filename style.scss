@@ -1,0 +1,67 @@
+// Outer circle diametr:
+$D: 150px;
+// Inner circle diametr:
+$d: 130px;
+// Progress bar thickness:
+$thickness: ($D - $d)/2;
+// Primary color:
+$primaty-color: steelblue;
+// Background color:
+$bg-color: white;
+
+* {
+  box-sizing: border-box;
+}
+
+.radial-progress-bar {
+  position: relative;
+  width: $D;
+  height: $D;
+}
+
+.right-half,
+.left-half,
+.left-half-mask,
+.inner-circle {
+  position: absolute;
+}
+
+.right-half,
+.left-half,
+.left-half-mask {
+  height: 100%;
+  width: 50%;
+}
+
+.right-half,
+.left-half {
+  background: $primaty-color;
+  border-radius: $D/2 0 0 $D/2;
+  transform-origin: 100% 50%;
+}
+
+.left-half-mask,
+.inner-circle,
+.radial-progress-bar {
+  background: $bg-color;
+}
+
+.inner-circle {
+  height: $d;
+  width: $d;
+  margin: $thickness;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.left-half {
+  visibility: hidden;
+}
+
+.inner-circle .percentage {
+  height: inherit;
+  line-height: $d;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: $primaty-color;
+}

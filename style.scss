@@ -1,9 +1,9 @@
-// Outer circle diametr:
+// Outer circle diameter:
 $D: 150px;
-// Inner circle diametr:
+// Inner circle diameter:
 $d: 130px;
 // Primary color:
-$primaty-color: steelblue;
+$primary-color: steelblue;
 // Background color:
 $bg-color: white;
 
@@ -33,7 +33,7 @@ $bg-color: white;
 
 .right-half,
 .left-half {
-  background: $primaty-color;
+  background: $primary-color;
   border-radius: $D/2 0 0 $D/2;
   transform-origin: 100% 50%;
 }
@@ -61,5 +61,5 @@ $bg-color: white;
   line-height: $d;
   font-family: sans-serif;
   font-size: 30px;
-  color: $primaty-color;
+  color: $primary-color;
 }

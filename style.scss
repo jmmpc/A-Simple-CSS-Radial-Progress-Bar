@@ -2,8 +2,6 @@
 $D: 150px;
 // Inner circle diametr:
 $d: 130px;
-// Progress bar thickness:
-$thickness: ($D - $d)/2;
 // Primary color:
 $primaty-color: steelblue;
 // Background color:
@@ -49,7 +47,7 @@ $bg-color: white;
 .inner-circle {
   height: $d;
   width: $d;
-  margin: $thickness;
+  margin: ($D - $d)/2;
   border-radius: 50%;
   text-align: center;
 }
